@@ -1,0 +1,21 @@
+---
+apiVersion: aadpodidentity.k8s.io/v1
+kind: AzureIdentity
+metadata:
+  name: mgid-gbis-app-datalake-feeder-only-___TRIGRAM___-___DOMAIN___-___ENV___-aks
+  namespace: feeder-___TRIGRAM___-___DOMAIN___-___ENV___
+  annotations:
+    aadpodidentity.k8s.io/Behavior: namespaced
+spec:
+  clientID: ___CLIENT-ID___
+  resourceID: ___RESOURCE-ID___
+  type: 0
+---
+apiVersion: aadpodidentity.k8s.io/v1
+kind: AzureIdentityBinding
+metadata:
+  name: mgid-gbis-app-datalake-feeder-only-___TRIGRAM___-___DOMAIN___-___ENV___-aks
+  namespace: feeder-___TRIGRAM___-___DOMAIN___-___ENV___
+spec:
+  azureIdentity: mgid-gbis-app-datalake-feeder-only-___TRIGRAM___-___DOMAIN___-___ENV___-aks
+  selector: mgid-datalake-feeder-only-airflow
