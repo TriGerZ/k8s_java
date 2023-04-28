@@ -1,6 +1,6 @@
 apiVersion: tenancy.kiosk.sh/v1alpha1
 kind: Space
 metadata:
-  name: feeder-___TRIGRAM___-___DOMAIN___-___ENV___
+  name: myname
 spec:
   account: feeder-kiosk-account
