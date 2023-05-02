@@ -20,8 +20,12 @@ spec:
             spec:
               type: object
               properties:
-                account:
+                clientID:
                   type: string
+                resourceID:
+                  type: string
+                type:
+                  type: integer
   # either Namespaced or Cluster
   scope: Cluster
   names:
