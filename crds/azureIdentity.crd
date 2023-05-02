@@ -32,7 +32,7 @@ spec:
     # plural name to be used in the URL: /apis/<group>/<version>/<plural>
     plural: azureidentities
     # singular name to be used as an alias on the CLI and for display
-    singular: azureidentitie
+    singular: azureidentity
     # kind is normally the CamelCased singular type. Your resource manifests use this.
     kind: AzureIdentity
     # shortNames allow shorter string to match your resource on the CLI
