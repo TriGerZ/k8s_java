@@ -17,10 +17,13 @@ spec:
         openAPIV3Schema:
           type: object
           properties:
-            azureIdentity:
-              type: string
-            selector:
-              type: string
+            spec:
+              type: object
+              properties:
+                azureIdentity:
+                  type: string
+                selector:
+                  type: string
   # either Namespaced or Cluster
   scope: Cluster
   names:
